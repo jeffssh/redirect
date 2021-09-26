@@ -15,7 +15,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	codeString := r.URL.Query().Get("code")
 	code := 307
 	if url == "" {
-		url = "http://127.0.0.1"
+		url = "http://example.com"
 	}
 	if codeString != "" {
 		i, err := strconv.Atoi(codeString)
